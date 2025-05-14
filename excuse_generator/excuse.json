@@ -1,0 +1,203 @@
+{
+   "uk": [
+      "Це не баг, це фіча з непростим характером.",
+
+      "У мене збірка згоріла.",
+
+      "API раптово вирішив, що я йому більше не подобаюсь.",
+
+      "Я довірив це ChatGPT, а він сказав «не буду».",
+
+      "Ну ти ж не сказав, коли саме це має працювати.",
+
+      "Код компілюється? Вже перемога.",
+
+      "Мені потрібен кофеїн. І екзорцист.",
+
+      "У мене працює. Мабуть, у тебе повітря неправильне.",
+
+      "Моя функція пішла у відпустку — вигоріла.",
+
+      "Ну... тести були зелені. Десь.",
+
+      "Git конфліктує з реальністю.",
+
+      "У продакшну просто погана карма.",
+
+      "Напевно, назвав змінні латиною — тепер не читаються.",
+
+      "А що, в Python буває помилка виконання?",
+  
+      "Це класика жанру: вчора працювало.",
+
+      "Просто космос у ретрограді. Меркурій в ролбеку.",
+
+      "AI сказав, краще не чіпати.",
+
+      "Я вирішив усе переписати. Потім зрозумів, що раніше було краще.",
+
+      "Я ж не екстрасенс — звідки мені знати, що ти хотів?",
+
+      "DNS не резолвиться — я теж.",
+
+      "У голові завис дебагер.",
+
+      "У мене оновився плагін... і оновив проєкт до хаосу.",
+
+      "Воно працює, просто результат непередбачуваний.",
+
+      "Я писав це в п’ятницю ввечері. На емоціях.",
+
+      "Компілятор образився.",
+
+      "Я натиснув «скасувати», але Всесвіт вирішив інакше.",
+
+      "Так, я використав eval(), і ні — не шкодую.",
+
+      "Ти пробував вимкнути й викинути це?",
+
+      "Моя IDE сказала: «Ні».",
+
+      "Стек викликів згорів у вогні відчаю.",
+
+      "Просто прод підкидає баги, щоб я не відпочивав.",
+
+      "Миша вирішила сама зробити коміт.",
+
+      "Я використав ChatGPT у режимі «хаос».",
+
+      "Хтось змінив систему числення.",
+
+      "У мене іконка втомилась — значить, і я теж.",
+
+      "Писав під натхненням, але натхнення закінчилось на return.",
+
+      "Це було красиво, поки не довелося запускати.",
+
+      "Оптимізація з’їла читабельність.",
+
+      "Це не баг, це мистецтво.",
+
+      "Я все пояснив у коміті. Японською. Романом.",
+
+      "Бінарні зірки не зійшлися.",
+
+      "Воно працювало, поки ти не подивився.",
+
+      "Схоже, бібліотека у відкритих стосунках.",
+
+      "У мене фреймворк у запої.",
+
+      "Просто у цього бага фіча — бути багом.",
+
+      "Я підгледів це рішення на StackOverflow 2008 року.",
+
+      "Python не розуміє мого болю.",
+
+      "Воно працювало в тестах. На іншому комп’ютері. В іншій реальності.",
+
+      "Сервер сказав: «Немає прав». Я погодився.",
+
+      "Всесвіт багів завжди розширюється. Я лише спостерігач."
+    ],
+
+   "en": [
+      "It's not a bug, it's a feature with attitude.",
+
+      "My build caught fire.",
+
+      "The API suddenly decided it doesn't like me anymore.",
+
+      "I trusted ChatGPT, and it said < I won't >.",
+
+      "Well, you didn't say when it should work.",
+
+      "Code compiles? That’s already a win.",
+
+      "I need caffeine. And an exorcist.",
+
+      "It works on my machine. Must be your air.",
+
+      "My function went on vacation — burned out.",
+
+      "Well... tests were green. Somewhere.",
+
+      "Git is having a conflict with reality.",
+
+      "Production just has bad karma.",
+
+      "I probably named the variables in Latin — now they're unreadable.",
+
+      "Wait, Python has runtime errors?",
+
+      "Classic case of < worked yesterday >.",
+
+      "Mercury is in rollback.",
+
+      "AI said better not to touch it.",
+
+      "I decided to rewrite everything. Then realized it was better before.",
+
+      "I'm not psychic — how was I supposed to know what you meant?",
+
+      "DNS won't resolve — neither will I.",
+
+      "My debugger froze. In my brain.",
+
+      "My plugin updated... and upgraded the whole project to chaos.",
+
+      "It works, just with unpredictable output.",
+
+      "I wrote this on a Friday night. Emotionally.",
+
+      "The compiler is offended.",
+
+      "I hit “undo”, but the universe disagreed.",
+
+      "Yes, I used eval(), and no, I don’t regret it.",
+
+      "Have you tried turning it off and throwing it out?",
+
+      "My IDE said: “No.”",
+
+      "The call stack burned in a fire of despair.",
+
+      "Prod is faking bugs so I don’t rest.",
+
+      "The mouse committed on its own.",
+
+      "I used ChatGPT in chaos mode.",
+
+      "Someone changed the number system.",
+
+      "My icon is tired — so am I.",
+
+      "I was coding inspired... until return.",
+
+      "It was beautiful — until I had to run it.",
+
+      "Optimization devoured readability.",
+
+      "It's not a bug, it's art.",
+
+      "I explained everything in the commit. In Japanese. As a novel.",
+
+      "Binary stars didn’t align.",
+
+      "It worked until you looked at it.",
+
+      "Apparently the library is in an open relationship.",
+
+      "My framework is on a bender.",
+
+      "This bug’s feature is being a bug.",
+
+      "I found this solution on StackOverflow — 2008 edition.",
+
+      "Python doesn't understand my pain.",
+
+      "It worked in tests. On another computer. In another reality.",
+
+      "The server said: “Access denied.” I agreed." 
+    ]
+}
