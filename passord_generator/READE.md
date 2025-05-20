@@ -5,4 +5,4 @@ Password generator with a graphical interface where you can select the length an
 ## Start
 
 ```bash
-python gui.pyp
+python gui.py
