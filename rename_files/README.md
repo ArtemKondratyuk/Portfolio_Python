@@ -14,6 +14,9 @@
   </p>
 </div>
 
+<br />
+<br />
+
 <!-- ABOUT THE PROJECT -->
 ## About The Script
 
