@@ -41,6 +41,11 @@ Perfect for organizing photos, documents, or any set of files with a consistent 
 ```
 python rename_files.py
 ```
+or
+
+```
+python3 rename_files.py
+```
 
 <br />
 
