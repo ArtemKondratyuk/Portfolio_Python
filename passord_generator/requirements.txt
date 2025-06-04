@@ -2,3 +2,4 @@ autopep8==2.3.2
 pillow==10.4.0
 pycodestyle==2.13.0
 ttkbootstrap==1.13.8
+pyinstaller
