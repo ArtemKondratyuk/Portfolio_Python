@@ -1,22 +1,22 @@
 import ttkbootstrap as ttkb
-from ttkbootstrap.constants import PRIMARY  # Настройка внешнего вида интерфейса
-from generator import password_generator  # Функция генерации пароля
+from ttkbootstrap.constants import PRIMARY  # Налаштування зовнішнього вигляду інтерфейсу
+from generator import password_generator  # Функція генерації пароля
 
 
 def run_gui():
-    root = ttkb.Window(themename="superhero")  # Варианты тем интерфейсов: "darkly", "solar", "cyborg", "superhero"
+    root = ttkb.Window(themename="superhero")  # Варіанти тем интерфейсів: "darkly", "solar", "cyborg", "superhero"
 
-    root.geometry("600x250")  # Размер окна
-    root.resizable(False, False)  # Запрет для Пользователя на изменение размера окна
-    root.title("Password Generator")  # Название окна
+    root.geometry("600x250")  # Розмір вікна
+    root.resizable(False, False)  # Заборона для Користувача на зміну розміру вікна
+    root.title("Password Generator")  # Назва вікна
 
-    # 1. Фрейм для настроек чекбоксов.
+    # 1. Фрейм для налаштувань чекбоксів.
     main_frame = ttkb.Frame(root)
     main_frame.grid(row=0, column=0, padx=(80, 10), pady=10)
     root.grid_rowconfigure(0, weight=1)
     root.grid_columnconfigure(0, weight=1)
 
-    # Флажки (галочки)
+    # Прапорці (галочки)
     use_uppercase = ttkb.BooleanVar(value=True)
     use_lowercase = ttkb.BooleanVar(value=True)
     use_digits = ttkb.BooleanVar(value=True)
@@ -42,7 +42,7 @@ def run_gui():
         row=2, column=1, sticky="w", padx=10, pady=2
     )
 
-    # 2. Фрейм для длины пароля (метка + выпадающий список).
+    # 2. Фрейм для довжини пароля (мітка + список, що випадає).
     length_frame = ttkb.Frame(main_frame)
     length_frame.grid(row=3, column=0, columnspan=2, pady=(10, 5))
 
@@ -59,17 +59,17 @@ def run_gui():
     )
     length_combobox.pack(side="left", padx=5)
 
-    # Кнопка генерации и поле вывода.
+    # Кнопка генерації та поле виведення.
     def generate_password():
         try:
-            # Получаем параметры из интерфейса.
+            # Отримуємо параметри з інтерфейсу.
             length = int(length_var.get())
             include_upper = use_uppercase.get()
             include_lower = use_lowercase.get()
             include_digits = use_digits.get()
             include_symbols = use_symbols.get()
 
-            # Генерация пароля.
+            # Генерація пароля.
             password = password_generator(
                 length=length,
                 use_uppercase=include_upper,
@@ -78,21 +78,21 @@ def run_gui():
                 use_symbols=include_symbols,
             )
 
-            # Отображение в поле.
+            # Відображення в полі.
             password_output.delete(0, "end")
             password_output.insert(0, password)
 
         except ValueError:
-            # Показываем сообщение в случае ошибки
+            # Показуємо повідомлення у разі помилки.
             password_output.delete(0, "end")
             password_output.insert(0, "Error")
 
-    # Копирование пароля.
+    # Копіювання пароля.
     def copy_password():
         root.clipboard_clear()
         root.clipboard_append(password_output.get())
 
-    # 3. Фрейм для поля и кнопки копирования.
+    # 3. Фрейм для поля і кнопки копіювання.
     password_frame = ttkb.Frame(main_frame)
     password_frame.grid(row=4, column=0, columnspan=2, pady=(15, 0))
 
@@ -102,14 +102,14 @@ def run_gui():
     copy_btn = ttkb.Button(password_frame, text="Copy", width=5, command=copy_password, bootstyle="info-outline")
     copy_btn.grid(row=0, column=1)
 
-    # Кнопка генерации пароля — центр под полем
+    # Кнопка генерації пароля - центр під полем.
     generate_btn = ttkb.Button(
         main_frame, text="Get a password", command=generate_password, bootstyle=PRIMARY
     )
     generate_btn.grid(row=5, column=0, columnspan=2, pady=(10, 0), ipadx=10, sticky="w", padx=90)
 
-    # Настройки появления окна после запуска приложения
-    # Окно появляется по середине экрана с небольшим смещением вверх
+    # Налаштування появи вікна після запуску програми.
+    # Вікно з'являється по середині екрана з невеликим зміщенням вгору.
     window_width = 600
     window_height = 250
 

@@ -3,32 +3,33 @@ import string
 
 
 def password_generator(
-    length = 12,  # длинна пароля'
+    length = 12,  # довжина пароля.
     use_uppercase = True,
     use_lowercase = True,
     use_digits = True,
     use_symbols = True
 ) -> str: 
     """
-    Генерирует случайный безопасный пароль по заданным параметрам.
+    Генерує випадковий безпечний пароль за заданими параметрами.
     
-    :param length: Длина пароля (от 8 до 64)
-    :param use_uppercase: Включать заглавные буквы (A-Z)
-    :param use_lowercase: Включать строчные буквы (a-z)
-    :param use_digits: Включать цифры (0-9)
-    :param use_symbols: Включать спецсимволы (#$&!?*)
-    :return: Сгенерированный пароль
-    :raises ValueError: Если не выбран ни один тип символов
+    :param length: Довжина пароля (від 8 до 64),
+    :param use_uppercase: Включати прописні літери (A-Z),
+    :param use_lowercase: Включати рядкові літери (a-z),
+    :param use_digits: Включати цифри (0-9),
+    :param use_symbols: Включати спецсимволи (#$&!?*),
+    :return: Згенерований пароль,
+    :raises ValueError: Якщо не обрано жоден тип символів.
+    
     """
 
-    # Наборы символов
+    # Набір символів.
     uppercase_chars = string.ascii_uppercase
     lowercase_chars = string.ascii_lowercase
     numbers = string.digits 
     symbols = "#$&!?*" 
 
 
-    # Формируем пул доступных символов
+    # Формує пул доступних символів.
     all_chars = ""
     if use_uppercase:
         all_chars += uppercase_chars
@@ -40,12 +41,12 @@ def password_generator(
         all_chars += symbols
 
 
-    # Проверка: нельзя генерировать из пустого набора
+    # Перевірка: нельзянеможна згенерувати з пустого набору.
     if not all_chars:
-        raise ValueError("Выберите хотябы один тип символов!")
+        raise ValueError("Select at least one character type!")
 
 
-    # Генерация пароля    
+    # Генерація пароля.    
     password = ''.join(secrets.choice(all_chars) for _ in range(length))
     return(password)
 
